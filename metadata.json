@@ -1,0 +1,11 @@
+{
+  "name": "RupiVanta — Cash Command Center | VANTA AI Financial Assistant",
+  "description": "RupiVanta Cash Command Center — Predictive cash-flow forecasting, legal notice decoder, and task-performing VANTA AI Financial Assistant for small businesses.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

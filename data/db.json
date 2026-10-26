@@ -1,0 +1,1556 @@
+{
+  "schemaVersion": 2,
+  "authPassword": "Vanta@2026",
+  "passwordUpdatedAt": "2026-10-25T06:35:00.000Z",
+  "demoWorkspaces": {
+    "demo-sharma": {
+      "workspaceId": "demo-sharma",
+      "isDemo": true,
+      "labelBadge": "DEMO DATA — Synthetic Spice Wholesale Ledger",
+      "business": {
+        "id": "demo-sharma",
+        "name": "Sharma Stores [Demo]",
+        "businessType": "Wholesale & Retail Spices (Synthetic Demo)",
+        "city": "Bengaluru / Hubballi",
+        "state": "Karnataka",
+        "gstin": "29ABCDE1234F1Z5",
+        "minimumReserve": 10000,
+        "currentCash": 30000,
+        "isDemo": true
+      },
+      "transactions": [
+        {
+          "id": "tx-in-1",
+          "customerId": "cust-1",
+          "type": "inflow",
+          "title": "Whole Spices Consignment",
+          "partyName": "Sri Balaji Supermarket",
+          "contactPhone": "+91 98450 12345",
+          "amount": 20000,
+          "invoiceDate": "2026-10-15",
+          "dueDate": "2026-10-31",
+          "promisedDate": "2026-10-28",
+          "status": "expected",
+          "category": "b2b_invoice",
+          "invoiceNumber": "INV-409",
+          "paymentDetails": "NEFT month-end batch",
+          "notes": "Buyer verbally promised early payment on 28 Oct, though past 5 bills settled 2–4 days after month-end.",
+          "isDemoData": true
+        },
+        {
+          "id": "tx-in-2",
+          "customerId": "cust-2",
+          "type": "inflow",
+          "title": "Diwali Festive Restock Order",
+          "partyName": "Royal Kirana Stores",
+          "contactPhone": "+91 94480 88990",
+          "amount": 15000,
+          "invoiceDate": "2026-10-05",
+          "dueDate": "2026-10-20",
+          "promisedDate": "2026-10-24",
+          "status": "overdue",
+          "category": "b2b_invoice",
+          "invoiceNumber": "INV-402",
+          "paymentDetails": "UPI / IMPS on follow-up",
+          "notes": "Contractual due Oct 20; buyer promised Oct 24 and missed. Needs immediate WhatsApp reminder.",
+          "isDemoData": true
+        },
+        {
+          "id": "tx-in-3",
+          "customerId": "cust-3",
+          "type": "inflow",
+          "title": "Weekly Supply Batch #4",
+          "partyName": "Cauvery Mart",
+          "contactPhone": "+91 97312 44556",
+          "amount": 12500,
+          "invoiceDate": "2026-10-20",
+          "dueDate": "2026-11-03",
+          "promisedDate": "2026-11-03",
+          "status": "due_soon",
+          "category": "b2b_invoice",
+          "invoiceNumber": "INV-412",
+          "paymentDetails": "Automated Tuesday NEFT",
+          "notes": "Regular bi-weekly cycle customer with consistent on-time history.",
+          "isDemoData": true
+        },
+        {
+          "id": "tx-in-4",
+          "customerId": "cust-4",
+          "type": "inflow",
+          "title": "Coriander Seeds Wholesale",
+          "partyName": "Mysore Provision Co.",
+          "contactPhone": "+91 99001 77223",
+          "amount": 16000,
+          "paidAmount": 8000,
+          "invoiceDate": "2026-10-18",
+          "dueDate": "2026-11-07",
+          "promisedDate": "2026-11-05",
+          "status": "partially_paid",
+          "category": "b2b_invoice",
+          "invoiceNumber": "INV-398",
+          "paymentDetails": "50% advance UPI received; balance post inspection",
+          "notes": "Paid ₹8,000 advance on Oct 18. Remaining ₹8,000 due after warehouse check.",
+          "isDemoData": true
+        },
+        {
+          "id": "tx-in-5",
+          "customerId": "cust-5",
+          "type": "inflow",
+          "title": "Monthly Retail Cash Deposits",
+          "partyName": "Counter Cash Walk-in (Aggregated)",
+          "amount": 18000,
+          "invoiceDate": "2026-10-25",
+          "dueDate": "2026-11-15",
+          "promisedDate": null,
+          "status": "expected",
+          "category": "retail_sales",
+          "invoiceNumber": "RET-NOV15",
+          "notes": "Mid-month UPI & cash settlement batch.",
+          "isDemoData": true
+        },
+        {
+          "id": "tx-in-6",
+          "customerId": "cust-6",
+          "type": "inflow",
+          "title": "First Trial Catering Spice Pack",
+          "partyName": "Annapoorna Hotel & Catering",
+          "contactPhone": "+91 96112 33445",
+          "amount": 14000,
+          "invoiceDate": "2026-10-22",
+          "dueDate": "2026-11-01",
+          "promisedDate": "2026-11-01",
+          "status": "expected",
+          "category": "b2b_invoice",
+          "invoiceNumber": "INV-421",
+          "paymentDetails": "10-day trial credit (New Customer)",
+          "notes": "Brand-new hospitality buyer — 0 prior settled invoices; uses comparable cohort baseline.",
+          "isDemoData": true
+        },
+        {
+          "id": "tx-out-1",
+          "type": "outflow",
+          "title": "Raw Green Cardamom Batch #78",
+          "partyName": "Malnad Agro Suppliers",
+          "contactPhone": "+91 94801 33221",
+          "amount": 40000,
+          "invoiceDate": "2026-10-19",
+          "dueDate": "2026-10-29",
+          "status": "due_soon",
+          "category": "supplier",
+          "invoiceNumber": "BILL-889",
+          "notes": "Key farmer cooperative supply. Payment must clear or split to protect trade credit.",
+          "isDemoData": true
+        },
+        {
+          "id": "tx-out-2",
+          "type": "outflow",
+          "title": "Commercial Godown & Shop Rent",
+          "partyName": "Gandhi Bazaar Properties",
+          "contactPhone": "+91 98440 55667",
+          "amount": 12000,
+          "invoiceDate": "2026-10-25",
+          "dueDate": "2026-11-01",
+          "status": "expected",
+          "category": "rent",
+          "invoiceNumber": "RENT-NOV26",
+          "notes": "Monthly fixed rent due on 1st of month.",
+          "isDemoData": true
+        },
+        {
+          "id": "tx-out-3",
+          "type": "outflow",
+          "title": "Store Staff Wages & Advance",
+          "partyName": "Staff Payroll (3 employees)",
+          "amount": 14000,
+          "dueDate": "2026-11-05",
+          "status": "expected",
+          "category": "wages",
+          "notes": "Monthly salary disbursement.",
+          "isDemoData": true
+        },
+        {
+          "id": "tx-out-4",
+          "type": "outflow",
+          "title": "Commercial Electricity & BESCOM",
+          "partyName": "BESCOM Karnataka",
+          "amount": 3200,
+          "dueDate": "2026-11-08",
+          "status": "expected",
+          "category": "utilities",
+          "invoiceNumber": "BES-77218",
+          "notes": "Cold storage electricity utility bill.",
+          "isDemoData": true
+        },
+        {
+          "id": "tx-out-5",
+          "type": "outflow",
+          "title": "Biodegradable Packaging Pouches",
+          "partyName": "EcoPack India Ltd",
+          "contactPhone": "+91 97410 99221",
+          "amount": 6500,
+          "dueDate": "2026-11-12",
+          "status": "expected",
+          "category": "supplier",
+          "invoiceNumber": "ECO-291",
+          "notes": "Quarterly printed spice pouches delivery.",
+          "isDemoData": true
+        },
+        {
+          "id": "tx-out-6",
+          "type": "outflow",
+          "title": "December Godown Rent & Maintenance",
+          "partyName": "Gandhi Bazaar Properties",
+          "contactPhone": "+91 98440 55667",
+          "amount": 12000,
+          "dueDate": "2026-12-01",
+          "status": "expected",
+          "category": "rent",
+          "invoiceNumber": "RENT-DEC26",
+          "notes": "December scheduled shop & storage rent (90-day horizon).",
+          "isDemoData": true
+        },
+        {
+          "id": "tx-out-7",
+          "type": "outflow",
+          "title": "Winter Black Pepper Bulk Procurement",
+          "partyName": "Coorg Planters Co-op",
+          "contactPhone": "+91 94812 66778",
+          "amount": 24000,
+          "dueDate": "2026-12-18",
+          "status": "expected",
+          "category": "supplier",
+          "invoiceNumber": "COORG-104",
+          "notes": "Scheduled December harvest replenishment (90-day horizon).",
+          "isDemoData": true
+        }
+      ],
+      "customers": [
+        {
+          "id": "cust-1",
+          "name": "Sri Balaji Supermarket",
+          "category": "Supermarket Chain",
+          "contactPhone": "+91 98450 12345",
+          "totalBilled": 145000,
+          "totalPaid": 125000,
+          "overdueBalance": 0,
+          "pendingBalance": 20000,
+          "avgPaymentDelayDays": 1.8,
+          "onTimeRatePercent": 40,
+          "paymentFrequency": "Monthly Batch (Month-end)",
+          "reliabilityTier": "moderate",
+          "isDemo": true,
+          "cautiousEstimate": {
+            "expectedSettlementDate": "2026-11-02",
+            "confidenceBand": "± 3 days",
+            "uncertaintyReason": "Across 5 past invoices, Sri Balaji Supermarket averaged +1.8d past due (±1.8d). Factoring invoice size (₹20,000) and 16-day credit window, ML predicts 2 Nov (+2d delay, range 30 Oct–5 Nov, 75% confidence).",
+            "hasSufficientHistory": true
+          },
+          "history": [
+            {
+              "invoiceNumber": "INV-320",
+              "invoiceDate": "2026-05-15",
+              "amount": 22000,
+              "dueDate": "2026-05-31",
+              "promisedDate": "2026-05-31",
+              "paidDate": "2026-06-02",
+              "delayDays": 2,
+              "status": "paid_late"
+            },
+            {
+              "invoiceNumber": "INV-341",
+              "invoiceDate": "2026-06-15",
+              "amount": 24000,
+              "dueDate": "2026-06-30",
+              "promisedDate": "2026-06-30",
+              "paidDate": "2026-06-30",
+              "delayDays": 0,
+              "status": "paid_on_time"
+            },
+            {
+              "invoiceNumber": "INV-362",
+              "invoiceDate": "2026-07-16",
+              "amount": 25000,
+              "dueDate": "2026-07-31",
+              "promisedDate": "2026-07-30",
+              "paidDate": "2026-08-03",
+              "delayDays": 3,
+              "status": "paid_late"
+            },
+            {
+              "invoiceNumber": "INV-380",
+              "invoiceDate": "2026-08-15",
+              "amount": 26000,
+              "dueDate": "2026-08-31",
+              "promisedDate": "2026-08-31",
+              "paidDate": "2026-08-31",
+              "delayDays": 0,
+              "status": "paid_on_time"
+            },
+            {
+              "invoiceNumber": "INV-395",
+              "invoiceDate": "2026-09-15",
+              "amount": 28000,
+              "dueDate": "2026-09-30",
+              "promisedDate": "2026-09-29",
+              "paidDate": "2026-10-04",
+              "delayDays": 4,
+              "status": "paid_late"
+            },
+            {
+              "invoiceNumber": "INV-409",
+              "invoiceDate": "2026-10-15",
+              "amount": 20000,
+              "paidAmount": 0,
+              "dueDate": "2026-10-31",
+              "promisedDate": "2026-10-28",
+              "paidDate": null,
+              "delayDays": 0,
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "id": "cust-2",
+          "name": "Royal Kirana Stores",
+          "category": "Retail Grocery Store",
+          "contactPhone": "+91 94480 88990",
+          "totalBilled": 78000,
+          "totalPaid": 63000,
+          "overdueBalance": 15000,
+          "pendingBalance": 15000,
+          "avgPaymentDelayDays": 6.8,
+          "onTimeRatePercent": 25,
+          "paymentFrequency": "Irregular / Needs Follow-up",
+          "reliabilityTier": "moderate",
+          "isDemo": true,
+          "cautiousEstimate": {
+            "expectedSettlementDate": "2026-10-29",
+            "confidenceBand": "± 5 days",
+            "uncertaintyReason": "Currently 5d overdue since 20 Oct. Based on 4 historical invoices (avg +6.8d delay, ±4.7d variation), ML estimates settlement around 29 Oct (25 Oct–3 Nov, 61% confidence).",
+            "hasSufficientHistory": true
+          },
+          "history": [
+            {
+              "invoiceNumber": "INV-315",
+              "invoiceDate": "2026-05-01",
+              "amount": 12000,
+              "dueDate": "2026-05-15",
+              "promisedDate": "2026-05-18",
+              "paidDate": "2026-05-22",
+              "delayDays": 7,
+              "status": "paid_late"
+            },
+            {
+              "invoiceNumber": "INV-338",
+              "invoiceDate": "2026-06-01",
+              "amount": 14000,
+              "dueDate": "2026-06-15",
+              "promisedDate": "2026-06-18",
+              "paidDate": "2026-06-25",
+              "delayDays": 10,
+              "status": "paid_late"
+            },
+            {
+              "invoiceNumber": "INV-359",
+              "invoiceDate": "2026-07-05",
+              "amount": 18000,
+              "dueDate": "2026-07-20",
+              "promisedDate": "2026-07-20",
+              "paidDate": "2026-07-20",
+              "delayDays": 0,
+              "status": "paid_on_time"
+            },
+            {
+              "invoiceNumber": "INV-382",
+              "invoiceDate": "2026-08-05",
+              "amount": 19000,
+              "dueDate": "2026-08-20",
+              "promisedDate": "2026-08-24",
+              "paidDate": "2026-08-30",
+              "delayDays": 10,
+              "status": "paid_late"
+            },
+            {
+              "invoiceNumber": "INV-402",
+              "invoiceDate": "2026-10-05",
+              "amount": 15000,
+              "paidAmount": 0,
+              "dueDate": "2026-10-20",
+              "promisedDate": "2026-10-24",
+              "paidDate": null,
+              "delayDays": 5,
+              "status": "overdue"
+            }
+          ]
+        },
+        {
+          "id": "cust-3",
+          "name": "Cauvery Mart",
+          "category": "Wholesale Provisioner",
+          "contactPhone": "+91 97312 44556",
+          "totalBilled": 112500,
+          "totalPaid": 100000,
+          "overdueBalance": 0,
+          "pendingBalance": 12500,
+          "avgPaymentDelayDays": 0.2,
+          "onTimeRatePercent": 100,
+          "paymentFrequency": "Bi-Weekly Tuesday Cycle",
+          "reliabilityTier": "high",
+          "isDemo": true,
+          "cautiousEstimate": {
+            "expectedSettlementDate": "2026-11-04",
+            "confidenceBand": "± 2 days",
+            "uncertaintyReason": "Across 5 past invoices, Cauvery Mart averaged +0.2d past due (±0.4d). Factoring invoice size (₹12,500) and 14-day credit window, ML predicts 4 Nov (+1d delay, range 2 Nov–6 Nov, 79% confidence).",
+            "hasSufficientHistory": true
+          },
+          "history": [
+            {
+              "invoiceNumber": "INV-328",
+              "invoiceDate": "2026-05-19",
+              "amount": 18000,
+              "dueDate": "2026-06-02",
+              "promisedDate": "2026-06-02",
+              "paidDate": "2026-06-02",
+              "delayDays": 0,
+              "status": "paid_on_time"
+            },
+            {
+              "invoiceNumber": "INV-350",
+              "invoiceDate": "2026-06-23",
+              "amount": 20000,
+              "dueDate": "2026-07-07",
+              "promisedDate": "2026-07-07",
+              "paidDate": "2026-07-07",
+              "delayDays": 0,
+              "status": "paid_on_time"
+            },
+            {
+              "invoiceNumber": "INV-371",
+              "invoiceDate": "2026-07-21",
+              "amount": 22000,
+              "dueDate": "2026-08-04",
+              "promisedDate": "2026-08-04",
+              "paidDate": "2026-08-05",
+              "delayDays": 1,
+              "status": "paid_late"
+            },
+            {
+              "invoiceNumber": "INV-392",
+              "invoiceDate": "2026-08-18",
+              "amount": 20000,
+              "dueDate": "2026-09-01",
+              "promisedDate": "2026-09-01",
+              "paidDate": "2026-09-01",
+              "delayDays": 0,
+              "status": "paid_on_time"
+            },
+            {
+              "invoiceNumber": "INV-405",
+              "invoiceDate": "2026-09-22",
+              "amount": 20000,
+              "dueDate": "2026-10-06",
+              "promisedDate": "2026-10-06",
+              "paidDate": "2026-10-06",
+              "delayDays": 0,
+              "status": "paid_on_time"
+            },
+            {
+              "invoiceNumber": "INV-412",
+              "invoiceDate": "2026-10-20",
+              "amount": 12500,
+              "paidAmount": 0,
+              "dueDate": "2026-11-03",
+              "promisedDate": "2026-11-03",
+              "paidDate": null,
+              "delayDays": 0,
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "id": "cust-4",
+          "name": "Mysore Provision Co.",
+          "category": "Semi-Wholesale Dealer",
+          "contactPhone": "+91 99001 77223",
+          "totalBilled": 102000,
+          "totalPaid": 94000,
+          "overdueBalance": 0,
+          "pendingBalance": 8000,
+          "avgPaymentDelayDays": 3.5,
+          "onTimeRatePercent": 25,
+          "paymentFrequency": "Two-Stage Split (Advance + Check)",
+          "reliabilityTier": "moderate",
+          "isDemo": true,
+          "cautiousEstimate": {
+            "expectedSettlementDate": "2026-11-10",
+            "confidenceBand": "± 4 days",
+            "uncertaintyReason": "Across 4 past invoices, Mysore Provision Co. averaged +3.5d past due (±2.9d). Factoring invoice size (₹16,000) and 20-day credit window, ML predicts 10 Nov (+3d delay, range 6 Nov–14 Nov, 70% confidence).",
+            "hasSufficientHistory": true
+          },
+          "history": [
+            {
+              "invoiceNumber": "INV-325",
+              "invoiceDate": "2026-05-25",
+              "amount": 20000,
+              "dueDate": "2026-06-10",
+              "promisedDate": "2026-06-10",
+              "paidDate": "2026-06-14",
+              "delayDays": 4,
+              "status": "paid_late"
+            },
+            {
+              "invoiceNumber": "INV-349",
+              "invoiceDate": "2026-06-30",
+              "amount": 22000,
+              "dueDate": "2026-07-15",
+              "promisedDate": "2026-07-15",
+              "paidDate": "2026-07-15",
+              "delayDays": 0,
+              "status": "paid_on_time"
+            },
+            {
+              "invoiceNumber": "INV-374",
+              "invoiceDate": "2026-08-03",
+              "amount": 24000,
+              "dueDate": "2026-08-18",
+              "promisedDate": "2026-08-20",
+              "paidDate": "2026-08-25",
+              "delayDays": 7,
+              "status": "paid_late"
+            },
+            {
+              "invoiceNumber": "INV-390",
+              "invoiceDate": "2026-09-07",
+              "amount": 20000,
+              "dueDate": "2026-09-22",
+              "promisedDate": "2026-09-22",
+              "paidDate": "2026-09-25",
+              "delayDays": 3,
+              "status": "paid_late"
+            },
+            {
+              "invoiceNumber": "INV-398",
+              "invoiceDate": "2026-10-18",
+              "amount": 16000,
+              "paidAmount": 8000,
+              "dueDate": "2026-11-07",
+              "promisedDate": "2026-11-05",
+              "paidDate": null,
+              "delayDays": 0,
+              "status": "partially_paid"
+            }
+          ]
+        },
+        {
+          "id": "cust-5",
+          "name": "Counter Cash Walk-in (Aggregated)",
+          "category": "Retail Over-the-counter",
+          "contactPhone": "N/A",
+          "totalBilled": 120000,
+          "totalPaid": 102000,
+          "overdueBalance": 0,
+          "pendingBalance": 18000,
+          "avgPaymentDelayDays": 0,
+          "onTimeRatePercent": 100,
+          "paymentFrequency": "Daily UPI & Cash Aggregation",
+          "reliabilityTier": "high",
+          "isDemo": true,
+          "cautiousEstimate": {
+            "expectedSettlementDate": "2026-11-15",
+            "confidenceBand": "± 1 day",
+            "uncertaintyReason": "Consistent on-time payer across 4 past invoices (avg +0.0d delay). Expected on schedule around 15 Nov (±1d, 84% confidence).",
+            "hasSufficientHistory": true
+          },
+          "history": [
+            {
+              "invoiceNumber": "RET-JUN",
+              "invoiceDate": "2026-06-01",
+              "amount": 24000,
+              "dueDate": "2026-06-30",
+              "paidDate": "2026-06-30",
+              "delayDays": 0,
+              "status": "paid_on_time"
+            },
+            {
+              "invoiceNumber": "RET-JUL",
+              "invoiceDate": "2026-07-01",
+              "amount": 26000,
+              "dueDate": "2026-07-31",
+              "paidDate": "2026-07-31",
+              "delayDays": 0,
+              "status": "paid_on_time"
+            },
+            {
+              "invoiceNumber": "RET-AUG",
+              "invoiceDate": "2026-08-01",
+              "amount": 28000,
+              "dueDate": "2026-08-31",
+              "paidDate": "2026-08-31",
+              "delayDays": 0,
+              "status": "paid_on_time"
+            },
+            {
+              "invoiceNumber": "RET-SEP",
+              "invoiceDate": "2026-09-01",
+              "amount": 24000,
+              "dueDate": "2026-09-30",
+              "paidDate": "2026-09-30",
+              "delayDays": 0,
+              "status": "paid_on_time"
+            },
+            {
+              "invoiceNumber": "RET-NOV15",
+              "invoiceDate": "2026-10-25",
+              "amount": 18000,
+              "paidAmount": 0,
+              "dueDate": "2026-11-15",
+              "promisedDate": null,
+              "paidDate": null,
+              "delayDays": 0,
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "id": "cust-6",
+          "name": "Annapoorna Hotel & Catering",
+          "category": "Hospitality / Catering Buyer (New)",
+          "contactPhone": "+91 96112 33445",
+          "totalBilled": 14000,
+          "totalPaid": 0,
+          "overdueBalance": 0,
+          "pendingBalance": 14000,
+          "avgPaymentDelayDays": 0,
+          "onTimeRatePercent": 0,
+          "paymentFrequency": "New Account — 10-Day Trial Credit",
+          "reliabilityTier": "cautious",
+          "isDemo": true,
+          "cautiousEstimate": {
+            "expectedSettlementDate": "2026-11-03",
+            "confidenceBand": "± 6 days",
+            "uncertaintyReason": "Baseline Estimate (New Customer): No prior settled bills for Annapoorna Hotel & Catering yet. Using comparable B2B cohort pattern (+2d over 10-day terms), INV-421 is estimated around 3 Nov (28 Oct–9 Nov, 40% confidence).",
+            "hasSufficientHistory": false
+          },
+          "history": [
+            {
+              "invoiceNumber": "INV-421",
+              "invoiceDate": "2026-10-22",
+              "amount": 14000,
+              "paidAmount": 0,
+              "dueDate": "2026-11-01",
+              "promisedDate": "2026-11-01",
+              "paidDate": null,
+              "delayDays": 0,
+              "status": "pending"
+            }
+          ]
+        }
+      ],
+      "accuracyRecords": [
+        {
+          "periodLabel": "Week 1 (Oct 03 - Oct 09, 2026)",
+          "weekEnding": "2026-10-09",
+          "projectedBalance": 28500,
+          "actualBalance": 27800,
+          "variance": -700,
+          "errorPercent": 2.5,
+          "accuracyPercent": 97.5,
+          "status": "minor_variance",
+          "explanation": "Minor variance (-₹700) due to unbudgeted freight loading fee paid at railway parcel office."
+        },
+        {
+          "periodLabel": "Week 2 (Oct 10 - Oct 16, 2026)",
+          "weekEnding": "2026-10-16",
+          "projectedBalance": 34000,
+          "actualBalance": 34200,
+          "variance": 200,
+          "errorPercent": 0.6,
+          "accuracyPercent": 99.4,
+          "status": "perfect",
+          "explanation": "High prediction accuracy. Cauvery Mart and retail counter receipts settled on schedule."
+        },
+        {
+          "periodLabel": "Week 3 (Oct 17 - Oct 23, 2026)",
+          "weekEnding": "2026-10-23",
+          "projectedBalance": 31500,
+          "actualBalance": 30000,
+          "variance": -1500,
+          "errorPercent": 4.8,
+          "accuracyPercent": 95.2,
+          "status": "minor_variance",
+          "explanation": "Variance (-₹1,500) caused by Royal Kirana Stores delaying their ₹15,000 invoice (INV-402) past Oct 20."
+        },
+        {
+          "periodLabel": "Week 4 (Oct 25, 2026 - Current Anchor)",
+          "weekEnding": "2026-10-25",
+          "projectedBalance": 30000,
+          "actualBalance": 30000,
+          "variance": 0,
+          "errorPercent": 0,
+          "accuracyPercent": 100,
+          "status": "perfect",
+          "explanation": "Confirmed bank opening balance reconciles 100% with passbook ledger balance today."
+        }
+      ],
+      "predictionOutcomes": [
+        {
+          "id": "outc-demo-1",
+          "transactionId": "hist-inv-405",
+          "customerId": "cust-3",
+          "partyName": "Cauvery Mart",
+          "invoiceNumber": "INV-405",
+          "amount": 20000,
+          "dueDate": "2026-10-06",
+          "promisedDate": "2026-10-06",
+          "predictedDate": "2026-10-06",
+          "predictedRangeStart": "2026-10-05",
+          "predictedRangeEnd": "2026-10-07",
+          "actualPaidDate": "2026-10-06",
+          "predictedDelayDays": 0,
+          "actualDelayDays": 0,
+          "absoluteErrorDays": 0,
+          "withinPredictedRange": true,
+          "recordedAt": "2026-10-06T14:20:00Z"
+        },
+        {
+          "id": "outc-demo-2",
+          "transactionId": "hist-inv-395",
+          "customerId": "cust-1",
+          "partyName": "Sri Balaji Supermarket",
+          "invoiceNumber": "INV-395",
+          "amount": 28000,
+          "dueDate": "2026-09-30",
+          "promisedDate": "2026-09-29",
+          "predictedDate": "2026-10-02",
+          "predictedRangeStart": "2026-09-30",
+          "predictedRangeEnd": "2026-10-04",
+          "actualPaidDate": "2026-10-04",
+          "predictedDelayDays": 2,
+          "actualDelayDays": 4,
+          "absoluteErrorDays": 2,
+          "withinPredictedRange": true,
+          "recordedAt": "2026-10-04T16:05:00Z"
+        },
+        {
+          "id": "outc-demo-3",
+          "transactionId": "hist-inv-390",
+          "customerId": "cust-4",
+          "partyName": "Mysore Provision Co.",
+          "invoiceNumber": "INV-390",
+          "amount": 20000,
+          "dueDate": "2026-09-22",
+          "promisedDate": "2026-09-22",
+          "predictedDate": "2026-09-26",
+          "predictedRangeStart": "2026-09-23",
+          "predictedRangeEnd": "2026-09-29",
+          "actualPaidDate": "2026-09-25",
+          "predictedDelayDays": 4,
+          "actualDelayDays": 3,
+          "absoluteErrorDays": 1,
+          "withinPredictedRange": true,
+          "recordedAt": "2026-09-25T11:45:00Z"
+        }
+      ],
+      "notices": [
+        {
+          "id": "notice-ni138-001",
+          "sampleKey": "ni_138_cheque",
+          "title": "Cheque Bounce Demand Notice u/s 138 NI Act",
+          "referenceNumber": "LEGAL/BLR/138/2026/089",
+          "status": "New",
+          "createdAt": "2026-10-24",
+          "authorityName": "Adv. M. Vishwanath & Associates (for Deccan Freight & Packaging Pvt. Ltd.)",
+          "authenticity": {
+            "verdict": "genuine",
+            "summary": "Looks genuine — legal notice sent by a registered lawyer by post, asking payment only to your supplier’s company bank account.",
+            "dinValue": null,
+            "dinCheckNote": "No government DIN needed (private lawyer notice under Cheque Bounce law; Lawyer registration KAR/1942/2014 is given).",
+            "officialDomainValue": "vishwanathlawchambers.in (Registered Post + Email copy)",
+            "domainCheckNote": "Matches a real law office rather than someone pretending to be a tax officer.",
+            "requestsPersonalAccount": false,
+            "paymentCheckNote": "Safe: Asks you to pay only to \"Deccan Freight & Packaging Pvt. Ltd.\" business bank account, not any personal UPI."
+          },
+          "lawSection": "Section 138 of the Negotiable Instruments Act, 1881",
+          "lawPlainExplanation": "If a business cheque bounces due to low bank balance, you must pay that cheque amount within 15 days of getting this letter to stop a court case.",
+          "whatIsAskedLines": [
+            "Cheque No. 482910 for ₹25,000 given to Deccan Freight & Packaging bounced due to low bank balance.",
+            "Pay ₹25,000 within 15 days of receiving this letter to stop a criminal court complaint.",
+            "Take a written payment receipt and collect your old cheque back after paying."
+          ],
+          "amountDemanded": 25000,
+          "amountBreakdown": "Cheque Amount: ₹25,000 (Lawyer also mentions ₹3,500 notice fee; paying the ₹25,000 cheque amount within 15 days stops a Section 138 court case).",
+          "severity": "Urgent",
+          "severityReason": "Strict 15-day time limit from receipt — missing it allows the supplier to file a court case.",
+          "issueDate": "2026-10-13",
+          "receivedDate": "2026-10-15",
+          "receivedDateConfirmed": true,
+          "statutoryDaysFromReceipt": 15,
+          "deadlineDate": "2026-10-30",
+          "deadlineCalculationBasis": "15 calendar days from the day you received the notice (received 15 Oct 2026 + 15 days = 30 Oct 2026).",
+          "ignoreTimeline": [
+            {
+              "timeframe": "Day 16 (After 30 Oct 2026)",
+              "title": "Supplier Can File a Court Case",
+              "detail": "After 30 Oct, the supplier gets 30 days to file a cheque bounce case in the Magistrate Court."
+            },
+            {
+              "timeframe": "Month 2–3",
+              "title": "Court Summons & 20% Deposit",
+              "detail": "You will have to appear in court in person, and the court can order an immediate 20% deposit."
+            },
+            {
+              "timeframe": "Final Court Order",
+              "title": "Heavy Fine up to Double the Cheque",
+              "detail": "Fine can go up to double the cheque amount (₹50,000) along with legal trouble."
+            }
+          ],
+          "documentsChecklist": [
+            {
+              "id": "ni-doc-1",
+              "label": "Postal envelope with India Post delivery date stamp",
+              "detail": "Shows the exact date you received this letter (starts the 15-day count).",
+              "checked": true
+            },
+            {
+              "id": "ni-doc-2",
+              "label": "Bank cheque bounce slip & October bank statement",
+              "detail": "Check the exact date and reason the cheque returned.",
+              "checked": false
+            },
+            {
+              "id": "ni-doc-3",
+              "label": "Deccan Freight bills and delivery slips",
+              "detail": "Confirm that ₹25,000 is truly owed for goods received.",
+              "checked": false
+            },
+            {
+              "id": "ni-doc-4",
+              "label": "Bank transfer (NEFT/RTGS) receipt after paying",
+              "detail": "Write Cheque No. 482910 in the bank transfer remark.",
+              "checked": false
+            }
+          ],
+          "advisorGuidance": {
+            "verdict": "Yes",
+            "roleLabel": "Local Lawyer (Advocate)",
+            "reasons": [
+              "Cheque bounce notices can lead to a court case, so a lawyer makes sure your reply and payment receipt protect you completely.",
+              "If goods were damaged or the cheque was only given for security, a lawyer must send a written reply within 15 days.",
+              "A CA handles tax returns, whereas a lawyer handles Section 138 cheque bounce replies."
+            ]
+          },
+          "draftReplyText": "Date: 24 October 2026\n\nTo,\nAdv. M. Vishwanath & Associates,\nLegal Counsel for Deccan Freight & Packaging Pvt. Ltd.,\nBengaluru, Karnataka.\n\nRef: Your Legal Demand Notice Ref. LEGAL/BLR/138/2026/089 dated 13 Oct 2026 (Received on 15 Oct 2026)\nSubject: Reply and Payment of Cheque Amount against Cheque No. 482910 under Section 138 of the NI Act, 1881\n\nDear Sir,\n\n1. On behalf of Sharma Stores, Bengaluru, we confirm receiving your notice on 15 Oct 2026 regarding Cheque No. 482910 dated 05 Oct 2026 for ₹25,000.\n\n2. Please note that the cheque returned unpaid only due to a short-term cash timing gap and with no bad intention.\n\n3. Within the 15-day legal period from receipt of notice, we are paying the full cheque amount of ₹25,000 via RTGS/NEFT to the business current account of Deccan Freight & Packaging Pvt. Ltd. (UTR No.: [WRITE BANK UTR NUMBER HERE]).\n\n4. Since full payment is made within 15 days under Section 138 of the NI Act, kindly confirm full settlement in writing and return original Cheque No. 482910 within 7 days.\n\nYours faithfully,\nFor Sharma Stores\nProprietor / Authorised Signatory\nBengaluru, Karnataka",
+          "extensionLetterText": "Date: 24 October 2026\n\nTo,\nThe Authorised Signatory,\nDeccan Freight & Packaging Pvt. Ltd.,\nCopy to: Adv. M. Vishwanath & Associates, Bengaluru.\n\nRef: Notice Ref. LEGAL/BLR/138/2026/089 dated 13 Oct 2026 regarding Cheque No. 482910 (₹25,000)\nSubject: Request for Friendly Two-Part Payment Schedule\n\nDear Sir,\n\n1. We value our long business relationship with Deccan Freight & Packaging Pvt. Ltd. We received your notice on 15 Oct 2026 regarding Cheque No. 482910 for ₹25,000.\n\n2. Because festival payments from our retail buyers are delayed by a few days, we kindly request your agreement to accept payment in two parts:\n   - First payment of ₹12,500 by RTGS on or before 28 Oct 2026; and\n   - Balance payment of ₹12,500 by RTGS on or before 06 Nov 2026.\n\n3. Kindly confirm in writing by 27 Oct 2026 if Deccan Freight & Packaging Pvt. Ltd. accepts this schedule so we can transfer the first part immediately.\n\nYours sincerely,\nFor Sharma Stores\nProprietor / Authorised Signatory\nBengaluru, Karnataka",
+          "confidence": {
+            "sender": "Read from notice",
+            "lawSection": "Read from notice",
+            "whatIsAsked": "Read from notice",
+            "amountDemanded": "Read from notice",
+            "deadline": "Read from notice"
+          },
+          "sourceSnippet": "STATUTORY DEMAND NOTICE UNDER SECTION 138 OF THE NEGOTIABLE INSTRUMENTS ACT, 1881. Ref: LEGAL/BLR/138/2026/089. Cheque No. 482910 dated 05.10.2026 for ₹25,000 drawn by Sharma Stores returned unpaid...",
+          "linkedToCashflow": true
+        },
+        {
+          "id": "notice-gst-drc01-002",
+          "sampleKey": "gst_drc01",
+          "title": "GST Show-Cause Notice (Form GST DRC-01)",
+          "referenceNumber": "ZD291026048192F",
+          "status": "In progress",
+          "createdAt": "2026-10-24",
+          "authorityName": "Assistant Commissioner of Commercial Taxes (GST Office LGSTO-020), Bengaluru",
+          "authenticity": {
+            "verdict": "genuine",
+            "summary": "Looks genuine — has an official government DIN number, comes from @gst.gov.in, and asks payment only on the official GST website.",
+            "dinValue": "CBIC-2026-10-4918273645",
+            "dinCheckNote": "Official DIN CBIC-2026-10-4918273645 is printed clearly (can be checked on esanchar.cbic.gov.in).",
+            "officialDomainValue": "noreply@gst.gov.in",
+            "domainCheckNote": "Official Government GST website email (@gst.gov.in).",
+            "requestsPersonalAccount": false,
+            "paymentCheckNote": "Safe: Asks payment only on services.gst.gov.in — does NOT ask for any personal bank account or UPI."
+          },
+          "lawSection": "Section 73(1) of the CGST / KGST Act, 2017 (Form GST DRC-01)",
+          "lawPlainExplanation": "The GST officer is asking you to explain a mismatch between the GST credit you claimed and what your suppliers uploaded.",
+          "whatIsAskedLines": [
+            "Your GST return claimed ₹15,200 more input tax credit than what showed up from your suppliers.",
+            "Upload your purchase bills, transport slips, and bank payment proof on the GST portal to explain.",
+            "Or, if the claim was a mistake, pay ₹18,500 (₹15,200 tax + ₹1,800 interest + ₹1,500 fine) within 30 days."
+          ],
+          "amountDemanded": 18500,
+          "amountBreakdown": "Tax: ₹15,200 · Interest: ₹1,800 · Fine: ₹1,500 (Total: ₹18,500)",
+          "severity": "Needs attention",
+          "severityReason": "You have 30 days to reply — if you upload supplier bills on time, you may not have to pay this money.",
+          "issueDate": "2026-10-04",
+          "receivedDate": "2026-10-06",
+          "receivedDateConfirmed": false,
+          "statutoryDaysFromReceipt": 30,
+          "deadlineDate": "2026-11-05",
+          "deadlineCalculationBasis": "30 calendar days from the day you received the GST notice (received 6 Oct 2026 + 30 days = 5 Nov 2026).",
+          "ignoreTimeline": [
+            {
+              "timeframe": "After 5 Nov 2026",
+              "title": "One-Sided Final Tax Bill (DRC-07)",
+              "detail": "If you do not reply, the GST officer can make the ₹18,500 bill final without hearing your side."
+            },
+            {
+              "timeframe": "1 to 3 Months Later",
+              "title": "18% Yearly Interest Keeps Growing",
+              "detail": "Daily interest keeps adding onto ₹15,200 until resolved."
+            },
+            {
+              "timeframe": "After 3 Months",
+              "title": "E-Way Bill Block & Bank Hold",
+              "detail": "GST portal can stop your e-Way bills for shop goods and recover money from your bank account."
+            }
+          ],
+          "documentsChecklist": [
+            {
+              "id": "gst-doc-1",
+              "label": "List matching your GSTR-3B return with supplier GSTR-2B",
+              "detail": "Shows which spice supplier uploaded their bill late.",
+              "checked": true
+            },
+            {
+              "id": "gst-doc-2",
+              "label": "Original GST purchase bills from those suppliers",
+              "detail": "Must clearly show GST number and tax breakup.",
+              "checked": true
+            },
+            {
+              "id": "gst-doc-3",
+              "label": "E-Way bills and transport lorry receipts",
+              "detail": "Proves the spice sacks actually came to your shop.",
+              "checked": false
+            },
+            {
+              "id": "gst-doc-4",
+              "label": "Bank statement showing NEFT payment to those suppliers",
+              "detail": "Proves you paid the supplier along with GST.",
+              "checked": false
+            }
+          ],
+          "advisorGuidance": {
+            "verdict": "Maybe",
+            "roleLabel": "Chartered Accountant (CA)",
+            "reasons": [
+              "If your CA Ramesh already files your monthly GST, share this notice with him so he can upload Form DRC-06 cleanly.",
+              "If a supplier filed late in the next month, attaching the bills and bank proof usually closes the matter.",
+              "You do not need a court lawyer for this GST portal notice."
+            ]
+          },
+          "draftReplyText": "Date: 24 October 2026\n\nTo,\nThe Assistant Commissioner of Commercial Taxes (LGSTO-020),\nBengaluru, Karnataka.\n\nRef: Show Cause Notice in Form GST DRC-01 Ref. No. ZD291026048192F dated 04 Oct 2026 | DIN: CBIC-2026-10-4918273645\nSubject: Reply in Form GST DRC-06 with Purchase Bills and Bank Proof\n\nRespected Sir / Madam,\n\n1. With reference to your GST notice proposing ₹18,500 (including tax of ₹15,200), we respectfully submit our explanation and purchase records on behalf of Sharma Stores.\n\n2. All GST credit of ₹15,200 is for genuine spice stock received at our shop and paid through our bank account.\n\n3. The difference in GSTR-2B happened only because two registered suppliers uploaded their bills in the next month’s return. We have not claimed any extra credit.\n\n4. We are attaching:\n   (a) Bill-by-bill matching statement;\n   (b) Copies of signed GST purchase invoices and e-Way bills; and\n   (c) Bank statement entries showing full payment to the suppliers.\n\n5. Kindly check these records, drop the proposed demand of ₹18,500, and give us a personal hearing opportunity if any clarification is needed.\n\nYours faithfully,\nFor Sharma Stores\nProprietor / Authorised Signatory\nBengaluru, Karnataka",
+          "extensionLetterText": "Date: 24 October 2026\n\nTo,\nThe Assistant Commissioner of Commercial Taxes (LGSTO-020),\nBengaluru, Karnataka.\n\nRef: Show Cause Notice in Form GST DRC-01 Ref. No. ZD291026048192F | DIN: CBIC-2026-10-4918273645\nSubject: Request for 15 More Days to Collect Supplier Bills and Bank Records\n\nRespected Sir / Madam,\n\n1. We received the above GST DRC-01 notice regarding ₹18,500 input tax credit difference.\n\n2. We are collecting lorry receipts, signed bills, and GST filing proofs from our outstation spice suppliers so we can submit a complete reply.\n\n3. Under Section 75(5) of the CGST Act, we kindly request 15 extra days after 05 November 2026 to upload our full reply in Form GST DRC-06. We have not asked for extra time earlier.\n\nThanking you,\nYours faithfully,\nFor Sharma Stores\nProprietor / Authorised Signatory",
+          "confidence": {
+            "sender": "Read from notice",
+            "lawSection": "Read from notice",
+            "whatIsAsked": "Read from notice",
+            "amountDemanded": "Read from notice",
+            "deadline": "Estimated, please confirm"
+          },
+          "sourceSnippet": "FORM GST DRC-01 Reference No: ZD291026048192F | DIN: CBIC-2026-10-4918273645. Excess ITC in GSTR-3B vs GSTR-2B of ₹15,200 plus interest ₹1,800 and penalty ₹1,500 (Total ₹18,500)...",
+          "linkedToCashflow": true
+        },
+        {
+          "id": "notice-it-143-003",
+          "sampleKey": "it_143_1",
+          "title": "Income Tax Intimation u/s 143(1)",
+          "referenceNumber": "CPC/2627/A6/2491827345",
+          "status": "New",
+          "createdAt": "2026-10-24",
+          "authorityName": "Income Tax Department (CPC Bengaluru)",
+          "authenticity": {
+            "verdict": "genuine",
+            "summary": "Looks genuine — routine computer check from CPC Bengaluru with an official reference number and @cpc.incometax.gov.in email.",
+            "dinValue": "CPC/2627/A6/2491827345",
+            "dinCheckNote": "Official CPC Reference CPC/2627/A6/2491827345 can be seen after logging in to eportal.incometax.gov.in.",
+            "officialDomainValue": "intimations@cpc.incometax.gov.in",
+            "domainCheckNote": "Official Income Tax Department (.gov.in) email address.",
+            "requestsPersonalAccount": false,
+            "paymentCheckNote": "Safe: Any payment is only on the official Income Tax portal (e-Pay Tax), never to any private account."
+          },
+          "lawSection": "Section 143(1) of the Income-tax Act, 1961",
+          "lawPlainExplanation": "This is an automatic computer check comparing your filed Income Tax Return with tax credit records on the portal.",
+          "whatIsAskedLines": [
+            "The Income Tax computer found ₹6,400 less TDS tax credit in your Form 26AS than what was written in your return.",
+            "Check if your wholesale buyer has now updated their TDS filing in Form 26AS.",
+            "Log in to the Income Tax portal to ask for a free computer re-check, or pay ₹6,400 if it was claimed by mistake."
+          ],
+          "amountDemanded": 6400,
+          "amountBreakdown": "TDS difference: ₹6,150 · Interest: ₹250 (Total: ₹6,400)",
+          "severity": "Routine",
+          "severityReason": "Routine computer summary — not a raid or audit, and you still have 25 days to respond online.",
+          "issueDate": "2026-10-18",
+          "receivedDate": "2026-10-19",
+          "receivedDateConfirmed": true,
+          "statutoryDaysFromReceipt": 30,
+          "deadlineDate": "2026-11-18",
+          "deadlineCalculationBasis": "30 calendar days from receiving the intimation email (received 19 Oct 2026 + 30 days = 18 Nov 2026).",
+          "ignoreTimeline": [
+            {
+              "timeframe": "After 18 Nov 2026",
+              "title": "1% Monthly Interest Starts",
+              "detail": "Simple interest of 1% per month (~₹64/month) starts adding onto ₹6,400."
+            },
+            {
+              "timeframe": "Next Tax Return",
+              "title": "Future Tax Refund Adjusted",
+              "detail": "If you get any tax refund next year, ₹6,400 will be cut from it."
+            },
+            {
+              "timeframe": "After 6 Months",
+              "title": "Tax Officer Reminder",
+              "detail": "You will get a reminder email to clear or reply to the pending ₹6,400 demand."
+            }
+          ],
+          "documentsChecklist": [
+            {
+              "id": "it-doc-1",
+              "label": "Latest Form 26AS and AIS tax credit statement",
+              "detail": "Check if the ₹6,150 TDS from your customer now shows up.",
+              "checked": false
+            },
+            {
+              "id": "it-doc-2",
+              "label": "Form 16A TDS certificate given by your customer",
+              "detail": "Check customer TAN number and amount deducted.",
+              "checked": false
+            },
+            {
+              "id": "it-doc-3",
+              "label": "Copy of filed Income Tax Return for this year",
+              "detail": "Check that there was no typing mistake in the TDS entry.",
+              "checked": false
+            }
+          ],
+          "advisorGuidance": {
+            "verdict": "No",
+            "roleLabel": "Online Portal (or ask your CA during regular visit)",
+            "reasons": [
+              "For a small ₹6,400 TDS computer mismatch, clicking \"Tax Credit Mismatch\" online takes 5 minutes with zero fee.",
+              "If TDS was typed twice by mistake, you can pay ₹6,400 directly on the portal.",
+              "You can also forward it on WhatsApp to CA Ramesh if he keeps your portal password."
+            ]
+          },
+          "draftReplyText": "Date: 24 October 2026\n\nOnline Reply on Income Tax Portal (Pending Actions -> Response to Outstanding Demand)\n\nAuthority: Centralized Processing Centre (CPC), Income Tax Department, Bengaluru\nReference No.: CPC/2627/A6/2491827345 dated 18 Oct 2026\nAssessment Year: 2026-27\n\nSubject: Reply to ₹6,400 Demand u/s 143(1) and Request for TDS Credit Re-check u/s 154\n\nReason for Portal Submission:\n1. The demand of ₹6,400 arose only because TDS credit of ₹6,150 (plus ₹250 interest) deducted by our buyer had not yet updated when the return was processed.\n\n2. Our buyer has now updated their quarterly TDS statement, and the ₹6,150 credit appears in our latest Form 26AS.\n\n3. We have submitted an online Section 154 Rectification request on the portal. Kindly reprocess the return, allow the TDS credit, and reduce the payable amount to ₹0.\n\nSubmitted by:\nProprietor — Sharma Stores\nBengaluru, Karnataka",
+          "extensionLetterText": "Date: 24 October 2026\n\nTo,\nThe Assessing Officer,\nIncome Tax Department, Bengaluru, Karnataka.\n\nRef: Intimation u/s 143(1) Ref. No. CPC/2627/A6/2491827345 dated 18 Oct 2026 (Amount: ₹6,400)\nSubject: Request for 30 Days Time While Buyer Updates TDS Statement\n\nRespected Sir / Madam,\n\n1. Regarding the intimation u/s 143(1) showing ₹6,400 payable due to unmatched TDS credit, tax was already deducted from our wholesale bills.\n\n2. Our buyer is filing their TDS correction so the credit appears in our Form 26AS within 21 days.\n\n3. Kindly grant 30 days time and keep recovery of ₹6,400 on hold while the TDS correction and online re-check are completed.\n\nYours faithfully,\nFor Sharma Stores\nProprietor",
+          "confidence": {
+            "sender": "Read from notice",
+            "lawSection": "Read from notice",
+            "whatIsAsked": "Read from notice",
+            "amountDemanded": "Read from notice",
+            "deadline": "Read from notice"
+          },
+          "sourceSnippet": "INCOME TAX DEPARTMENT — CPC BENGALURU. Intimation u/s 143(1). Reference No: CPC/2627/A6/2491827345. Net Amount Payable: ₹6,400 due to TDS mismatch with Form 26AS...",
+          "linkedToCashflow": true
+        }
+      ],
+      "people": [
+        {
+          "id": "person-ca-ramesh",
+          "name": "CA Ramesh",
+          "role": "CA",
+          "phone": "9109230036",
+          "note": "GST & Income Tax filings, compliance reviews"
+        },
+        {
+          "id": "person-suresh",
+          "name": "Suresh",
+          "role": "Accountant",
+          "phone": "8147246735",
+          "note": "Daily shop bills & cash ledger entries"
+        },
+        {
+          "id": "person-meera",
+          "name": "Advocate Meera",
+          "role": "Lawyer",
+          "phone": "9019824803",
+          "note": "Cheque bounce defense & legal notice replies"
+        },
+        {
+          "id": "person-priya",
+          "name": "Priya Sharma",
+          "role": "Family",
+          "phone": "9535577897",
+          "note": "Family co-owner & emergency contact"
+        }
+      ],
+      "reminderLogs": [],
+      "lastUpdated": "2026-10-25T15:03:42.539Z"
+    },
+    "demo-venkateshwara": {
+      "workspaceId": "demo-venkateshwara",
+      "isDemo": true,
+      "labelBadge": "DEMO DATA — Synthetic Grain Distributor Ledger",
+      "business": {
+        "id": "demo-venkateshwara",
+        "name": "Venkateshwara Traders [Demo]",
+        "businessType": "Grains & Pulses Distributor (Synthetic Demo)",
+        "city": "Davanagere",
+        "state": "Karnataka",
+        "gstin": "29BCDEF2345G2Z6",
+        "minimumReserve": 25000,
+        "currentCash": 62000,
+        "isDemo": true
+      },
+      "transactions": [
+        {
+          "id": "vt-in-1",
+          "customerId": "cust-vt-1",
+          "type": "inflow",
+          "title": "Toor Dal 20 Quintal Supply",
+          "partyName": "Bapuji SuperBazaar",
+          "contactPhone": "+91 98452 11990",
+          "amount": 42000,
+          "invoiceDate": "2026-10-14",
+          "dueDate": "2026-10-30",
+          "promisedDate": "2026-10-27",
+          "status": "expected",
+          "category": "b2b_invoice",
+          "invoiceNumber": "VT-211",
+          "notes": "Promised Oct 27; historical settlement averages +3d past due.",
+          "isDemoData": true
+        },
+        {
+          "id": "vt-in-2",
+          "customerId": "cust-vt-2",
+          "type": "inflow",
+          "title": "Sona Masoori Rice Consignment",
+          "partyName": "Tungabhadra Hoteliers",
+          "contactPhone": "+91 94481 77665",
+          "amount": 28000,
+          "invoiceDate": "2026-10-04",
+          "dueDate": "2026-10-19",
+          "promisedDate": "2026-10-23",
+          "status": "overdue",
+          "category": "b2b_invoice",
+          "invoiceNumber": "VT-198",
+          "notes": "Overdue by 6 days; follow up via WhatsApp.",
+          "isDemoData": true
+        },
+        {
+          "id": "vt-out-1",
+          "type": "outflow",
+          "title": "APMC Mandi Grain Procurement",
+          "partyName": "Raichur Paddy Mills",
+          "contactPhone": "+91 97400 88210",
+          "amount": 58000,
+          "dueDate": "2026-10-28",
+          "status": "due_soon",
+          "category": "supplier",
+          "invoiceNumber": "RPM-509",
+          "notes": "APMC wholesale grain clearing bill.",
+          "isDemoData": true
+        },
+        {
+          "id": "vt-out-2",
+          "type": "outflow",
+          "title": "Warehouse Lease & Cold Fumigation",
+          "partyName": "Davanagere Agro Park",
+          "amount": 16500,
+          "dueDate": "2026-11-02",
+          "status": "expected",
+          "category": "rent",
+          "invoiceNumber": "DAP-11",
+          "isDemoData": true
+        }
+      ],
+      "customers": [
+        {
+          "id": "cust-vt-1",
+          "name": "Bapuji SuperBazaar",
+          "category": "Regional Supermarket",
+          "contactPhone": "+91 98452 11990",
+          "totalBilled": 162000,
+          "totalPaid": 120000,
+          "overdueBalance": 0,
+          "pendingBalance": 42000,
+          "avgPaymentDelayDays": 3,
+          "onTimeRatePercent": 33,
+          "paymentFrequency": "Fortnightly RTGS",
+          "reliabilityTier": "moderate",
+          "isDemo": true,
+          "cautiousEstimate": {
+            "expectedSettlementDate": "2026-11-03",
+            "confidenceBand": "± 5 days",
+            "uncertaintyReason": "Across 3 past invoices, Bapuji SuperBazaar averaged +3.0d past due (±2.6d). Factoring invoice size (₹42,000) and 16-day credit window, ML predicts 3 Nov (+4d delay, range 29 Oct–8 Nov, 65% confidence).",
+            "hasSufficientHistory": true
+          },
+          "history": [
+            {
+              "invoiceNumber": "VT-160",
+              "invoiceDate": "2026-07-15",
+              "amount": 38000,
+              "dueDate": "2026-07-30",
+              "paidDate": "2026-08-03",
+              "delayDays": 4,
+              "status": "paid_late"
+            },
+            {
+              "invoiceNumber": "VT-178",
+              "invoiceDate": "2026-08-15",
+              "amount": 40000,
+              "dueDate": "2026-08-30",
+              "paidDate": "2026-08-30",
+              "delayDays": 0,
+              "status": "paid_on_time"
+            },
+            {
+              "invoiceNumber": "VT-192",
+              "invoiceDate": "2026-09-15",
+              "amount": 42000,
+              "dueDate": "2026-09-30",
+              "paidDate": "2026-10-05",
+              "delayDays": 5,
+              "status": "paid_late"
+            },
+            {
+              "invoiceNumber": "VT-211",
+              "invoiceDate": "2026-10-14",
+              "amount": 42000,
+              "paidAmount": 0,
+              "dueDate": "2026-10-30",
+              "promisedDate": "2026-10-27",
+              "paidDate": null,
+              "delayDays": 0,
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "id": "cust-vt-2",
+          "name": "Tungabhadra Hoteliers",
+          "category": "Bulk Hospitality Buyer",
+          "contactPhone": "+91 94481 77665",
+          "totalBilled": 96000,
+          "totalPaid": 68000,
+          "overdueBalance": 28000,
+          "pendingBalance": 28000,
+          "avgPaymentDelayDays": 7.5,
+          "onTimeRatePercent": 0,
+          "paymentFrequency": "Monthly Delayed Clearing",
+          "reliabilityTier": "high_risk",
+          "isDemo": true,
+          "cautiousEstimate": {
+            "expectedSettlementDate": "2026-10-27",
+            "confidenceBand": "± 5 days",
+            "uncertaintyReason": "Currently 6d overdue since 19 Oct. Based on 2 historical invoices (avg +7.5d delay, ±2.1d variation), ML estimates settlement around 27 Oct (25 Oct–1 Nov, 51% confidence).",
+            "hasSufficientHistory": false
+          },
+          "history": [
+            {
+              "invoiceNumber": "VT-151",
+              "invoiceDate": "2026-07-01",
+              "amount": 32000,
+              "dueDate": "2026-07-16",
+              "paidDate": "2026-07-25",
+              "delayDays": 9,
+              "status": "paid_late"
+            },
+            {
+              "invoiceNumber": "VT-174",
+              "invoiceDate": "2026-08-10",
+              "amount": 36000,
+              "dueDate": "2026-08-25",
+              "paidDate": "2026-08-31",
+              "delayDays": 6,
+              "status": "paid_late"
+            },
+            {
+              "invoiceNumber": "VT-198",
+              "invoiceDate": "2026-10-04",
+              "amount": 28000,
+              "paidAmount": 0,
+              "dueDate": "2026-10-19",
+              "promisedDate": "2026-10-23",
+              "paidDate": null,
+              "delayDays": 6,
+              "status": "overdue"
+            }
+          ]
+        }
+      ],
+      "accuracyRecords": [
+        {
+          "periodLabel": "Week 1 (Oct 03 - Oct 09, 2026)",
+          "weekEnding": "2026-10-09",
+          "projectedBalance": 28500,
+          "actualBalance": 27800,
+          "variance": -700,
+          "errorPercent": 2.5,
+          "accuracyPercent": 97.5,
+          "status": "minor_variance",
+          "explanation": "Minor variance (-₹700) due to unbudgeted freight loading fee paid at railway parcel office."
+        },
+        {
+          "periodLabel": "Week 2 (Oct 10 - Oct 16, 2026)",
+          "weekEnding": "2026-10-16",
+          "projectedBalance": 34000,
+          "actualBalance": 34200,
+          "variance": 200,
+          "errorPercent": 0.6,
+          "accuracyPercent": 99.4,
+          "status": "perfect",
+          "explanation": "High prediction accuracy. Cauvery Mart and retail counter receipts settled on schedule."
+        },
+        {
+          "periodLabel": "Week 3 (Oct 17 - Oct 23, 2026)",
+          "weekEnding": "2026-10-23",
+          "projectedBalance": 31500,
+          "actualBalance": 30000,
+          "variance": -1500,
+          "errorPercent": 4.8,
+          "accuracyPercent": 95.2,
+          "status": "minor_variance",
+          "explanation": "Variance (-₹1,500) caused by Royal Kirana Stores delaying their ₹15,000 invoice (INV-402) past Oct 20."
+        },
+        {
+          "periodLabel": "Week 4 (Oct 25, 2026 - Current Anchor)",
+          "weekEnding": "2026-10-25",
+          "projectedBalance": 30000,
+          "actualBalance": 30000,
+          "variance": 0,
+          "errorPercent": 0,
+          "accuracyPercent": 100,
+          "status": "perfect",
+          "explanation": "Confirmed bank opening balance reconciles 100% with passbook ledger balance today."
+        }
+      ],
+      "predictionOutcomes": [],
+      "notices": [],
+      "people": [
+        {
+          "id": "person-ca-ramesh",
+          "name": "CA Ramesh",
+          "role": "CA",
+          "phone": "9109230036",
+          "note": "GST & Income Tax filings, compliance reviews"
+        },
+        {
+          "id": "person-suresh",
+          "name": "Suresh",
+          "role": "Accountant",
+          "phone": "8147246735",
+          "note": "Daily shop bills & cash ledger entries"
+        },
+        {
+          "id": "person-meera",
+          "name": "Advocate Meera",
+          "role": "Lawyer",
+          "phone": "9019824803",
+          "note": "Cheque bounce defense & legal notice replies"
+        },
+        {
+          "id": "person-priya",
+          "name": "Priya Sharma",
+          "role": "Family",
+          "phone": "9535577897",
+          "note": "Family co-owner & emergency contact"
+        }
+      ],
+      "reminderLogs": [],
+      "lastUpdated": "2026-10-25T15:03:42.541Z"
+    },
+    "demo-nandi": {
+      "workspaceId": "demo-nandi",
+      "isDemo": true,
+      "labelBadge": "DEMO DATA — Synthetic Fleet & Packaging Ledger",
+      "business": {
+        "id": "demo-nandi",
+        "name": "Nandi Logistics & Supplies [Demo]",
+        "businessType": "Local Fleet & Packaging (Synthetic Demo)",
+        "city": "Mysuru",
+        "state": "Karnataka",
+        "gstin": "29CDEFG3456H3Z7",
+        "minimumReserve": 15000,
+        "currentCash": 45000,
+        "isDemo": true
+      },
+      "transactions": [
+        {
+          "id": "nl-in-1",
+          "customerId": "cust-nl-1",
+          "type": "inflow",
+          "title": "Monthly Corrugated Box Contract",
+          "partyName": "Chamundi Foods Pvt Ltd",
+          "contactPhone": "+91 99008 44112",
+          "amount": 35000,
+          "invoiceDate": "2026-10-12",
+          "dueDate": "2026-11-02",
+          "promisedDate": "2026-11-02",
+          "status": "expected",
+          "category": "contract",
+          "invoiceNumber": "NL-804",
+          "isDemoData": true
+        },
+        {
+          "id": "nl-out-1",
+          "type": "outflow",
+          "title": "Fleet Diesel & Highway Toll Settlement",
+          "partyName": "IndianOil Fleet Card",
+          "amount": 29000,
+          "dueDate": "2026-10-28",
+          "status": "due_soon",
+          "category": "utilities",
+          "invoiceNumber": "IOC-229",
+          "isDemoData": true
+        },
+        {
+          "id": "nl-out-2",
+          "type": "outflow",
+          "title": "Driver & Loader Payroll",
+          "partyName": "Fleet Crew Payroll",
+          "amount": 22000,
+          "dueDate": "2026-11-04",
+          "status": "expected",
+          "category": "wages",
+          "isDemoData": true
+        }
+      ],
+      "customers": [
+        {
+          "id": "cust-nl-1",
+          "name": "Chamundi Foods Pvt Ltd",
+          "category": "FMCG Contract Client",
+          "contactPhone": "+91 99008 44112",
+          "totalBilled": 140000,
+          "totalPaid": 105000,
+          "overdueBalance": 0,
+          "pendingBalance": 35000,
+          "avgPaymentDelayDays": 1,
+          "onTimeRatePercent": 67,
+          "paymentFrequency": "Monthly Contract Cycle",
+          "reliabilityTier": "moderate",
+          "isDemo": true,
+          "cautiousEstimate": {
+            "expectedSettlementDate": "2026-11-03",
+            "confidenceBand": "± 2 days",
+            "uncertaintyReason": "Across 3 past invoices, Chamundi Foods Pvt Ltd averaged +1.0d past due (±1.0d). Factoring invoice size (₹35,000) and 21-day credit window, ML predicts 3 Nov (+1d delay, range 1 Nov–5 Nov, 79% confidence).",
+            "hasSufficientHistory": true
+          },
+          "history": [
+            {
+              "invoiceNumber": "NL-740",
+              "invoiceDate": "2026-07-12",
+              "amount": 35000,
+              "dueDate": "2026-08-02",
+              "paidDate": "2026-08-02",
+              "delayDays": 0,
+              "status": "paid_on_time"
+            },
+            {
+              "invoiceNumber": "NL-768",
+              "invoiceDate": "2026-08-12",
+              "amount": 35000,
+              "dueDate": "2026-09-02",
+              "paidDate": "2026-09-04",
+              "delayDays": 2,
+              "status": "paid_late"
+            },
+            {
+              "invoiceNumber": "NL-789",
+              "invoiceDate": "2026-09-12",
+              "amount": 35000,
+              "dueDate": "2026-10-02",
+              "paidDate": "2026-10-03",
+              "delayDays": 1,
+              "status": "paid_on_time"
+            },
+            {
+              "invoiceNumber": "NL-804",
+              "invoiceDate": "2026-10-12",
+              "amount": 35000,
+              "paidAmount": 0,
+              "dueDate": "2026-11-02",
+              "promisedDate": "2026-11-02",
+              "paidDate": null,
+              "delayDays": 0,
+              "status": "pending"
+            }
+          ]
+        }
+      ],
+      "accuracyRecords": [
+        {
+          "periodLabel": "Week 1 (Oct 03 - Oct 09, 2026)",
+          "weekEnding": "2026-10-09",
+          "projectedBalance": 28500,
+          "actualBalance": 27800,
+          "variance": -700,
+          "errorPercent": 2.5,
+          "accuracyPercent": 97.5,
+          "status": "minor_variance",
+          "explanation": "Minor variance (-₹700) due to unbudgeted freight loading fee paid at railway parcel office."
+        },
+        {
+          "periodLabel": "Week 2 (Oct 10 - Oct 16, 2026)",
+          "weekEnding": "2026-10-16",
+          "projectedBalance": 34000,
+          "actualBalance": 34200,
+          "variance": 200,
+          "errorPercent": 0.6,
+          "accuracyPercent": 99.4,
+          "status": "perfect",
+          "explanation": "High prediction accuracy. Cauvery Mart and retail counter receipts settled on schedule."
+        },
+        {
+          "periodLabel": "Week 3 (Oct 17 - Oct 23, 2026)",
+          "weekEnding": "2026-10-23",
+          "projectedBalance": 31500,
+          "actualBalance": 30000,
+          "variance": -1500,
+          "errorPercent": 4.8,
+          "accuracyPercent": 95.2,
+          "status": "minor_variance",
+          "explanation": "Variance (-₹1,500) caused by Royal Kirana Stores delaying their ₹15,000 invoice (INV-402) past Oct 20."
+        },
+        {
+          "periodLabel": "Week 4 (Oct 25, 2026 - Current Anchor)",
+          "weekEnding": "2026-10-25",
+          "projectedBalance": 30000,
+          "actualBalance": 30000,
+          "variance": 0,
+          "errorPercent": 0,
+          "accuracyPercent": 100,
+          "status": "perfect",
+          "explanation": "Confirmed bank opening balance reconciles 100% with passbook ledger balance today."
+        }
+      ],
+      "predictionOutcomes": [],
+      "notices": [],
+      "people": [
+        {
+          "id": "person-ca-ramesh",
+          "name": "CA Ramesh",
+          "role": "CA",
+          "phone": "9109230036",
+          "note": "GST & Income Tax filings, compliance reviews"
+        },
+        {
+          "id": "person-suresh",
+          "name": "Suresh",
+          "role": "Accountant",
+          "phone": "8147246735",
+          "note": "Daily shop bills & cash ledger entries"
+        },
+        {
+          "id": "person-meera",
+          "name": "Advocate Meera",
+          "role": "Lawyer",
+          "phone": "9019824803",
+          "note": "Cheque bounce defense & legal notice replies"
+        },
+        {
+          "id": "person-priya",
+          "name": "Priya Sharma",
+          "role": "Family",
+          "phone": "9535577897",
+          "note": "Family co-owner & emergency contact"
+        }
+      ],
+      "reminderLogs": [],
+      "lastUpdated": "2026-10-25T15:03:42.542Z"
+    }
+  },
+  "realWorkspaces": {},
+  "lastUpdated": "2026-10-25T15:03:42.673Z"
+}

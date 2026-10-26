@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', 'Noto Sans Kannada', 'Noto Sans Tamil', 'Noto Sans Telugu', 'Noto Sans Malayalam', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1C1917;
+    background-color: #FDF8EE;
+    font-size: 1.0625rem;
+    line-height: 1.55;
+  }
+
+  /* Strict rule: Monospace ONLY for numeric values, never for sentences */
+  .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-feature-settings: "tnum" 1, "zero" 1;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Traditional Indian Bahi-Khata subtle ledger-ruled header texture */
+.khata-ledger-header {
+  background-color: #FAF1DF;
+  background-image:
+    linear-gradient(90deg, transparent 0px, transparent 14px, rgba(194, 65, 12, 0.14) 14px, rgba(194, 65, 12, 0.14) 16px, transparent 16px),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0px,
+      transparent 27px,
+      rgba(180, 148, 98, 0.12) 27px,
+      rgba(180, 148, 98, 0.12) 28px
+    );
+}
+
+.khata-card {
+  background-color: #FFFDF9;
+  border: 1px solid #E5D9C3;
+  box-shadow: 0 2px 8px rgba(68, 48, 20, 0.05);
+}
+
+/* Soft pulse for urgent "days left" badge and VANTA speaking state */
+@keyframes softUrgentPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.25);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 6px rgba(220, 38, 38, 0);
+  }
+}
+
+@keyframes vantaWave {
+  0%, 100% {
+    transform: scaleY(0.45);
+  }
+  50% {
+    transform: scaleY(1.25);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .urgent-days-pulse {
+    animation: softUrgentPulse 2.4s ease-in-out infinite;
+  }
+
+  .vanta-wave-speaking,
+  .munimji-mouth-speaking {
+    transform-origin: center;
+    animation: vantaWave 0.34s ease-in-out infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom warm scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F6EFE0;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBBBA0;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A89474;
+}
